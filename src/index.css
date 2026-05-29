@@ -378,3 +378,14 @@ body {
   background: #21262d;
   margin: 0 12px 8px;
 }
+
+@keyframes flicker {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+
+.tree-chevron.found {
+  animation: flicker 1s ease-in-out infinite;
+  color: #58a6ff;
+}
